@@ -265,6 +265,7 @@ span {
     background-color: #ebf0e4;
     overflow: hidden;
     position: relative;
+    z-index: 1;
 }
 
 .cook-image-box {
@@ -282,6 +283,7 @@ span {
     top: 40px;
     left: -50px;
     width: 300px;
+    z-index: -1;
     max-width: 100%;
     height: auto;
     object-fit: contain;
@@ -752,10 +754,7 @@ span {
     color: #c4c4c4;
 }
 
-/* =========================
-   Responsive
-========================= */
-
+/* media query */
 @media (max-width: 1199px) {
 
     .healthy-title,
@@ -945,6 +944,10 @@ span {
         line-height: 26px;
     }
 
+    .leaf-right {
+        display: none;
+    }
+
     .spice-bowls {
         flex-direction: column;
     }
@@ -979,4 +982,5 @@ span {
     .client-info {
         flex-direction: column;
     }
+
 }
